@@ -1,0 +1,175 @@
+﻿#menu {
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 66;
+    width: 240px;
+    min-height: 100%;
+    background: #fff;
+    font-family: 'Microsoft YaHei';
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-transition: .4s cubic-bezier(.18, .81, .3, .89);
+    transition: .4s cubic-bezier(.18, .81, .3, .89);
+    will-change: transform, -webkit-transform
+}
+
+    #menu .brand-wrap {
+        background-size: 100% 100%
+    }
+
+    #menu .brand {
+        padding: 40px 20px 2em;
+        background: rgba(63, 81, 181, 0.5)
+    }
+
+    #menu .avatar {
+        display: block;
+        width: 80px;
+        height: 80px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+    }
+
+    #menu .introduce {
+        margin: 1em 0 0;
+        color: #fff
+    }
+
+    #menu .intra {
+        display: inline-block;
+        padding-top: 4px;
+        color: #c5cae9;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+    #menu .nav {
+        margin: 0;
+        padding: 12px 0;
+        height: 300px;
+        min-height: calc(100% - 115px);
+        list-style: none;
+        line-height: 44px
+    }
+
+        #menu .nav li {
+            padding: 0 20px
+        }
+
+            #menu .nav li .icon {
+                position: absolute;
+                top: 0;
+                left: 20px;
+                line-height: inherit
+            }
+
+            #menu .nav li:hover,
+            #menu .nav li.active {
+                background: rgba(0, 0, 0, 0.05);
+            }
+
+                #menu .nav li:hover a,
+                #menu .nav li.active a,
+                #menu .nav li:hover .icon,
+                #menu .nav li.active .icon {
+                    color: #3f51b5;
+                }
+
+        #menu .nav a {
+            display: block;
+            padding-left: 48px;
+            height: 44px;
+            line-height: 44px;
+            font-weight: 500;
+            color: #727272;
+            text-decoration: none;
+        }
+
+    #menu img {
+        max-width: 100%;
+        border: none;
+    }
+
+.top-header {
+    border-radius: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    height: 80px;
+    font-family: 'Microsoft YaHei';
+    background: #3f51b5;
+    -webkit-transition: padding-left .6s ease-in-out, background-color .3s cubic-bezier(.4, 0, .2, 1), box-shadow .15s linear;
+    transition: padding-left .6s ease-in-out, background-color .3s cubic-bezier(.4, 0, .2, 1), box-shadow .15s linear;
+    z-index: 30
+}
+
+.header-title {
+    font-weight: 400;
+    line-height: 80px;
+    font-size: 16px;
+    text-align: center;
+    margin-left:6%;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+#Main {
+    border-radius: 5px;
+    width: 80%;
+    height: auto;
+    background: #fff;
+    margin-top: 100px;
+    margin-right: 2%;
+    font-family: 'Microsoft YaHei';
+    float: right;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.footer {
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.6);
+    background: #303f9f;
+    float: right;
+    width: 167%;
+    margin-right: -57px;
+}
+
+    .footer p {
+        margin: 0;
+        line-height: 1.6;
+        font-size: 13px;
+        text-align: center;
+    }
+
+        .footer p a {
+            border-bottom: 1px dotted rgba(255, 255, 255, 0.5)
+        }
+
+            .footer p a:hover {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.7)
+            }
+
+    .footer .top {
+        padding: 16px;
+        background: #3f51b5
+    }
+
+    .footer a {
+        color: inherit;
+        opacity: .8
+    }
+
+        .footer a:hover {
+            color: #fff;
+            text-decoration: none
+        }
+
+    .footer .bottom {
+        padding: 16px
+    }

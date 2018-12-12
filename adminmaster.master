@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminmaster.master.cs" Inherits="adminmaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>翰林书院</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="css/css.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="top-header">
+                <div class="header-title">读书破万卷，下笔如有神。—— 杜甫</div>
+            </div>
+            <aside id="menu">
+                <div class="brand-wrap" style="background-image: url(images/brand.jpg)">
+                    <div class="brand">
+                        <a href="/" class="avatar">
+                            <img src="images/Note.png" /></a>
+                        <div class="introduce">
+                            <h1 class="name">翰林书院</h1>
+                            <p class="intra">信息管理系统期末作业</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-bar">
+                    <ul class="nav">
+                        <li class="waves-block waves-effect"><a href="index.aspx" target="_self">首页</a></li>
+                        <li class="waves-block waves-effect"><a href="addBook.aspx" target="_self">录入书籍</a></li>
+                        <li class="waves-block waves-effect"><a href="BookQuery.aspx" target="_self">分类查询</a></li>
+                        <li class="waves-block waves-effect"><a href="AdamQuery.aspx" target="_self">书籍搜素</a></li>
+                        <li class="waves-block waves-effect"><a href="Manage.aspx" target="_self">书籍管理</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div id="Main">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
