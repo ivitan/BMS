@@ -10,9 +10,9 @@
                 <asp:TextBox ID="user" runat="server" CssClass="txtbox"></asp:TextBox></td>
         </tr>
         <tr>
-            <td>书籍名称</td>
+            <td>书籍编号</td>
             <td>
-                <asp:TextBox ID="mc" runat="server" CssClass="txtbox"></asp:TextBox></td>
+                <asp:TextBox ID="bh" runat="server" CssClass="txtbox"></asp:TextBox></td>
         </tr>
         <tr>
             <td>

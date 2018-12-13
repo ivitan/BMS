@@ -15,7 +15,6 @@ public partial class Borrow : System.Web.UI.Page
             string _id = Session["user"].ToString();
             user.Text = _id;
             bh.Text = Request.QueryString["bianhao"];
-            mc.Text = Request.QueryString["mc"];
             date.Text = DateTime.Now.ToString("yyyy-MM-dd");
         }
         else
@@ -35,7 +34,7 @@ public partial class Borrow : System.Web.UI.Page
         string str_conn = str_connection + str_sourcefile;
         cnn = new OleDbConnection(str_conn);
 
-        string sql = "insert into [借阅](读者编号,书籍编号,书籍名称,借书日期,还书日期) values('" + _id + "','" + bh.Text + "','" + mc.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd") + "','" + hshu.Text + "')";
+        string sql = "insert into [借阅](读者编号,图书编号,借书日期,还书日期) values('" + _id + "','" + bh.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd") + "','" + hshu.Text + "')";
 
         Response.Write(sql);
         cnn.Open();

@@ -6,7 +6,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="box">
         <div id="div_listview" class="fl">
-            <h2><asp:Label ID="UserName" runat="server"  CssClass="user"></asp:Label>&nbsp&nbsp&nbsp<asp:Button ID="Button1" runat="server" Text="退出登录" CssClass="btn" OnClick="Button1_Click"/></h2>
+            <h2>
+                <asp:Label ID="UserName" runat="server" CssClass="user"></asp:Label>&nbsp&nbsp&nbsp<asp:Button ID="Button1" runat="server" Text="退出登录" CssClass="btn" OnClick="Button1_Click" /></h2>
             <asp:ListView ID="ListView1" runat="server" DataSourceID="asc_user" ItemPlaceholderID="itemholder">
                 <LayoutTemplate>
                     <div id="itemholder" runat="server"></div>
@@ -48,9 +49,8 @@
                             <p>作者：<%#Eval("主编作者")%></p>
                             <p>价格：<%#Eval("书籍价格", "{0:C}")%></p>
                             <p>出版社：<%#Eval("出版社") %></p>
-                            <p>类别:<%#Eval("书籍类别") %></p>
-                            <p>出版时间：<%#Eval("出版时间","{0:D}") %></p>
-                            <a href='Return.aspx?bianhao=<%#Eval("书籍名称") %>' style="text-decoration: none; font-size: 14px; color: Red; margin-left: auto">还书</a>
+                            <p>借书日期：<%#Eval("借书日期","{0:D}") %></p>
+                            <a href='Return.aspx?bianhao=<%#Eval("书籍编号") %>' style="text-decoration: none; font-size: 14px; color: Red; margin-left: auto">还书</a>
                         </div>
                         <div class="clr"></div>
                     </div>

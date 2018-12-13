@@ -16,11 +16,6 @@
                 <asp:TextBox ID="bh" runat="server" CssClass="txtbox"></asp:TextBox></td>
         </tr>
         <tr>
-            <td>书籍名称</td>
-            <td>
-                <asp:TextBox ID="mc" runat="server" CssClass="txtbox"></asp:TextBox></td>
-        </tr>
-        <tr>
             <td>借书日期</td>
             <td>
                 <asp:TextBox ID="date" runat="server" CssClass="txtbox"></asp:TextBox></td>

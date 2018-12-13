@@ -14,7 +14,7 @@ public partial class Return : System.Web.UI.Page
         {
             string _id = Session["user"].ToString();
             user.Text = _id;
-            mc.Text = Request.QueryString["bianhao"];
+            bh.Text = Request.QueryString["bianhao"];
 
         }
         else
@@ -35,7 +35,7 @@ public partial class Return : System.Web.UI.Page
         string str_conn = str_connection + str_sourcefile;
         cnn = new OleDbConnection(str_conn);
 
-        string sql = "DELETE FROM [借阅] WHERE ([借书日期] = " + mc.Text + "')";
+        string sql = "DELETE FROM [借阅] WHERE ([图书编号] = '" + bh.Text + "')";
 
         Response.Write(sql);
         cnn.Open();

@@ -12,7 +12,7 @@ public partial class Reader : System.Web.UI.Page
         if (Session["user"] != null)
         {
             string _id = Session["user"].ToString();
-            UserName.Text = "欢迎登录!" + _id  ;
+            UserName.Text = "欢迎登录!" + _id;
         }
         else
         {
@@ -22,7 +22,7 @@ public partial class Reader : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-            Session.Remove("user");
-            Server.Transfer("Login.aspx");
+        Session.Remove("user");
+        Server.Transfer("Login.aspx");
     }
 }
