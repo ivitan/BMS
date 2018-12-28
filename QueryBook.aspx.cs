@@ -9,7 +9,14 @@ public partial class QueryBook : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Session["user"] != null)
+        {
+            string _id = Session["user"].ToString();
+        }
+        else
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 
     protected void BulletedList1_Click(object sender, BulletedListEventArgs e)

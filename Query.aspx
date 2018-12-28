@@ -13,8 +13,8 @@
                         <asp:TextBox ID="TextBox1" runat="server" CssClass="txtbox"></asp:TextBox></td>
                     <td><br />
                         <asp:Button ID="Button1" runat="server" Text="搜索" CssClass="btn" />
+                    </td>
                 </tr>
-                </td>
             </table>
             <asp:ListView ID="ListView1" runat="server" DataSourceID="asc_query" ItemPlaceholderID="itemholder">
                 <LayoutTemplate>

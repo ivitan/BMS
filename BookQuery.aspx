@@ -20,7 +20,7 @@
                             <p>价格：<%#Eval("书籍价格", "{0:C}")%></p>
                             <p>出版社：<%#Eval("出版社") %></p>
                             <p>出版时间：<%#Eval("出版时间","{0:D}") %></p>
-                            <a href='Borrow.aspx?bianhao=<%#Eval("书籍编号") %>' style="text-decoration: none; font-size: 14px; color: Red; margin-left: auto">书籍信息更新</a>
+                            <a href='UpdateBook.aspx?bianhao=<%#Eval("书籍编号") %>' style="text-decoration: none; font-size: 14px; color: Red; margin-left: auto">书籍信息更新</a>
                         </div>
                         <div class="clr"></div>
                     </div>
